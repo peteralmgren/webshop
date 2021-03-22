@@ -1,0 +1,17 @@
+.body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.test{
+    margin-top:20vh;
+}
+
+.test{
+    background-color: blue!important;
+}
+#welcome{
+    display:flex;
+    justify-content:center;
+}
