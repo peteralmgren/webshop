@@ -1,13 +1,10 @@
 <!doctype html>
 <html lang="sv">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
@@ -29,7 +26,12 @@
             <a  class="nav-link" href="#">Kontakta Oss</a>
           </li>
       </div>
-        <button onclick="location.href='cart.html'" class="btn btn-info"  type="submit">Varukorg</button>
+        
+        <button onclick="location.href='cart.html'" class="btn btn-info"  id="cart-btn">
+          <i class="fa fa-shopping-cart"></i>
+          <span class="text">Varukorg</span>
+          <span id="cart-amount"></span>
+        </button>
     </div>
   </nav>
   <body>
@@ -37,12 +39,22 @@
       <h1 id="welcome">Välkommen till Webshop</h1>
       <hr>
     </div>
-    <section class="container content-section sticky-top">
+    
+    <div class="row" id="output">
+      
+    
+      <h6 style="padding-bottom: 25px">
+      </h6>
+    </div>
+
+    <section class="container content-section">
       <h2 class="section-header">CART</h2>
       <div class="cart-row">
+        <div id="cart-output">
           <span class="cart-item cart-header cart-column">ITEM</span>
           <span class="cart-price cart-header cart-column">PRICE</span>
           <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
       </div>
       <div class="cart-items">
       </div>
@@ -52,15 +64,6 @@
       </div>
       <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
   </section>
-      
-  
-      
-    <div class="row col-lg-6" id="output">
-      
-    
-      <h6 style="padding-bottom: 25px">
-      </h6>
-    </div>
     
     <script src="script.js"></script>
     

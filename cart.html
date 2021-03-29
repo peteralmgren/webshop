@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"/>
-    <script>src="cart.js"</script>
+    <!-- <script>src="cart.js"</script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
 </head>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,20 +25,77 @@
         <li class="nav-item">
           <a  class="nav-link" href="#">Kontakta Oss</a>
         </li>
-
-        <button onclick="location.href='cart.html'" class="btn btn-danger"  type="submit">Varukorg
-            <!-- <a href="cart.html"></a> -->
-        </button>
-      
-    </div>
-  </div>
 </nav>
 
 <body>
+  <title>Webshop</title>
+</head>
+
+<body>
+  <div class="container" id="cart-container">
+    <h2 class="section-header">Din varukorg</h2>
+    <span class="cart-item  cart-column">ITEM</span>
+          <span class="cart-price cart-column">PRICE</span>
+          <span class="cart-item cart-column">QUANTITY</span>
+        
+  
+  <div id="cart-output">
+   
+          <div class="cart-items">
+          </div>
+          </div>
+  
+  </div>
+
+  <div class="cart-total">
+    <strong class="cart-total-title">Total</strong>
+    <span id="cart-total-price">$0</span>
+</div>
+  </div>
+
+  <form>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputfirstname">Firstname</label>
+        <input type="name" class="form-control" id="inputfirstname" placeholder="Firstname" required>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputlastname">Lastname</label>
+        <input type="name" class="form-control" id="inputlastname" placeholder="Lastname" required>
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputAddress">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Address" required>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-3">
+      <label for="inputAddress2">Email</label>
+      <input type="email" class="form-control" id="inputemail" placeholder="Email" required>
+      </div>
+      <div class="form-group col-md-3">
+        <label for="phone">Phone</label>
+        <input type="number" class="form-control" id="inputphone" placeholder="Phone" required>
+    </div>
+    
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label >
+        <input type="text" class="form-control" id="inputCity"required>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input type="text" class="form-control" id="inputZip"required>
+      </div>
+    </div>
+    <button class="btn-purchase btn btn-primary " type="submit">CHECKOUT</button>
+  </form>
+  
   
 
 
-<script>src="cart.js"</script>
+<script src="cart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     
     
