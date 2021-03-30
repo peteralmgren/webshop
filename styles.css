@@ -31,7 +31,7 @@
     background-color: #2D9CDB;
 }
 
-/* .shop-item {
+.shop-item {
     margin: 30px;
 }
 
@@ -64,7 +64,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-} */
+}
 .card-title{
     font-size:18px;
     font-style:garamond;
@@ -90,38 +90,36 @@
 }
 
 .cart-item {
-    width: 25%;
+    width: 55%;
 }
 
 .cart-price {
-    width: 5%;
-    font-size: 1em;
+    font-size: 1.2em;
     color: #333;
 }
 
 .cart-quantity {
-    width: 15%;
+    width: 0%;
 }
 
 .cart-item-title {
     color: #333;
     margin-left: .5em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .cart-item-image {
-    width: 45px;
+    width: 35px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .btn-danger {
     margin-top: .5em;
     color: white;
     background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
     font-weight: bold;
+    margin-left: 5em;
 }
 
 .btn-danger:hover {
@@ -132,23 +130,22 @@
     height: 34px;
     width: 50px;
     border-radius: 5px;
-    border: 1px solid #56CCF2;
+    border: 1px solid indianred;
     background-color: #eee;
     color: #333;
-    padding: 0;
     text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
+    font-size: 1em;
+    margin-right: 15px;
 }
 
-/* .cart-row:last-child {
-    display:none
+.cart-row:last-child {
+    display:none;
     border-bottom: 1px solid black;
-} */
+}
 
 .cart-row:last-child .cart-column {
     border: none;
-}
+} 
 
 .cart-total {
     text-align: left;
@@ -164,24 +161,44 @@
 }
 
 .cart-total-price {
+    
     color: #333;
     font-size: 1.1em;
 }
 
 .btn-purchase {
-    display: flex;
-    justify-content: center;
+    margin-left: 40em;
     font-size: 1em;
 }
 #welcome{
     display:flex;
     justify-content:center;
 }
-#addbtn{
-    background-color:indianred; 
-    width: 12em; 
-    border:1px solid black;
+#cart-container{
+    padding-top: 5em;
+
 }
-.row{
-    margin-left: 45em;
+.shopping-cart-button {
+    padding: 1rem;
+    background-color: primary-color;
+}
+  .shopping-cart-button hover{
+  background-color: darken(primary-color, 10%);
+  margin-right: 0.5rem;
+}
+.form-row{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    
+}
+.form-group {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    
+}
+#cart-id{
+    display:none;
+}
+.item-id{
+    display: none;
 }

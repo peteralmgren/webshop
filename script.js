@@ -25,7 +25,7 @@ class Product {
   }    
   
 itemArray = [];
-cartItemArray = [];
+cartItemArray = JSON.parse(localStorage.getItem("cart"));
 
 let data = localStorage.getItem("data");
 let cart = localStorage.getItem("cart");
@@ -92,6 +92,8 @@ function dataOutput(data) {
   }
 
 function ready() {
+    document.getElementById("cart-amount").innerHTML = cartItemArray.length
+
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (var i = 0; i < addToCartButtons.length; i++) {
         var button = addToCartButtons[i]
@@ -121,10 +123,7 @@ function addToCartClicked(event) {
 
 function addItemToCart(id, title, image, price) {
 
-    newid =id
-    newid = cartItemArray.length
-    
-    newClickedItem = new Cartitem(newid,title, image, price)
+    newClickedItem = new Cartitem(id,title, image, price)
     
     cartItemArray.push(newClickedItem)
 }
