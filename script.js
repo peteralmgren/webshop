@@ -25,9 +25,12 @@ class Product {
   }    
   
 itemArray = [];
-cartItemArray= [];
 
-
+if(JSON.parse(localStorage.getItem("cart"))){
+  cartItemArray = JSON.parse(localStorage.getItem("cart"));
+}else{
+  cartItemArray= [];
+}
 
 let data = localStorage.getItem("data");
 let cart = localStorage.getItem("cart");
@@ -94,8 +97,7 @@ function dataOutput(data) {
   }
 
 function ready() {
-
-    cartItemArray = JSON.parse(localStorage.getItem("cart"));
+  document.getElementById("cart-amount").innerHTML = cartItemArray.length;
       
     var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for (var i = 0; i < addToCartButtons.length; i++) {
